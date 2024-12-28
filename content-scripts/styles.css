@@ -1,0 +1,83 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --border-color: #0000001d;
+  --score-obtained-color: #495057;
+  --score-max-color: #dc3545;
+  --label-color: #6c757d;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --border-color: #ffffff1d;
+    --score-obtained-color: #bb86fc;
+    --score-max-color: #03dac6;
+    --label-color: #cf6679;
+  }
+}
+
+.score-scope-summary {
+  background: var(--background-color);
+  border-radius: 15px;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.score-scope-title {
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.score-scope-list {
+  padding: 0;
+  margin: 0;
+}
+
+.score-scope-item {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.score-scope-item:last-child {
+  border-bottom: none;
+}
+
+.score-scope-subject {
+  flex: 1;
+}
+
+.score-scope-scores {
+  display: flex;
+  gap: 15px;
+  font-size: 0.95rem;
+}
+
+.score-scope-obtained {
+  color: var(--score-obtained-color);
+}
+
+.score-scope-max {
+  color: var(--score-max-color);
+}
+
+/* Стили для значений */
+.score-value {
+  font-weight: bolder;
+}
+
+/* Стили для меток */
+.score-label {
+  color: var(--label-color);
+  margin-right: 5px;
+}
+li:hover {
+  opacity: 0.9;
+  scale: 1.01;
+}
