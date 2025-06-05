@@ -14,9 +14,8 @@
     "start": "extension start",
     "build": "extension build"
   },
-  "dependencies": {},
   "devDependencies": {
-    "extension": "latest"
+    "extension": "^2.0.0-rc.34"
   },
   "private": true,
   "author": {
